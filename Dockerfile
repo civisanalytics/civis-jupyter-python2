@@ -14,7 +14,7 @@ ENV LANG=en_US.UTF-8 \
     CIVIS_CONDA_VERSION=4.3.11 \
     CIVIS_PYTHON_VERSION=2.7.13 \
     DEFAULT_KERNEL=python2 \
-    CIVIS_JUPYTER_NOTEBOOK_VERSION=0.2.1 \
+    CIVIS_JUPYTER_NOTEBOOK_VERSION=0.2.2 \
     TINI_VERSION=v0.16.1
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && \
