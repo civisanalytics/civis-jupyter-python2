@@ -4,6 +4,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+
+## [1.1.0] - 2017-11-27
+
+### Changed
+- Moved conda to version 4.3.30
+
+### New packages
+- civisml-extensions 0.1.5
+- dask 0.15.4
+- s3fs 0.1.2
+
+### Package Updates
+- civis 1.6.2 -> 1.7.1
+- boto3 1.4.4 -> 1.4.5
+- matplotlib 2.0.2 -> 2.1.0
+- numpy 1.13.1 -> 1.13.3
+- pandas 0.20.3 -> 0.21.0
+- pyarrow 0.5.0 -> 0.7.1
+- scikit-learn 0.19.0 -> 0.19.1
+- cloudpickle 0.3.1 -> 0.5.1
+- muffnn 1.1.2 -> 1.2.0
+- pubnub 4.0.12 -> 4.0.13
+- tensorflow 1.2.1 -> 1.4.0
+
 ## [1.0.1] - 2017-09-18
 
 ## Changed
