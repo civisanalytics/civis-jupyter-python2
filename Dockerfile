@@ -32,7 +32,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && 
         libxrender1 \
         wget \
         ca-certificates \
-        curl && \
+        curl \
+        vim \
+        nano \
+        emacs && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
 
