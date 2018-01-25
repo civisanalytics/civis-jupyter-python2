@@ -6,6 +6,31 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## [1.4.0] - 2018-01-25
+### New packages
+- bqplot 0.10.2
+- feather-format 0.4.0
+
+### Package Updates
+- civis 1.7.1 -> 1.8.0
+- civisml-extensions 0.1.5 -> 0.1.6
+- muffnn 1.2.0 -> 2.0.0
+- cloudpickle 0.5.1 -> 0.5.2
+- dask 0.15.4 -> 0.16.1
+- ftputil 3.3.1 -> 3.4
+- tensorflow 1.4.0 -> 1.4.1
+- boto3 1.4.5 -> 1.5.11
+- cython 0.26 -> 0.27.3
+- openblas 0.2.19 -> 0.2.20
+- pandas 0.21.0 -> 0.22.0
+- pyarrow 0.7.1 -> 0.8.0
+- scipy 0.19.1 -> 1.0.0
+- ipywidgets 7.0.0 -> 7.1.0
+- notebook 5.2.0 -> 5.2.2
+
+### Fixed
+- Enabled widgetsnbextension so that ipywidgets works.
+
 ## [1.3.2] - 2018-01-16
 
 ### Changed
