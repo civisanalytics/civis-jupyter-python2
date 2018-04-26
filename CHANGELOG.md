@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+
+### Added
+- Added htop and tmux to Linux environment (#14)
+
 ## [1.4.0] - 2018-01-25
 ### New packages
 - bqplot 0.10.2
