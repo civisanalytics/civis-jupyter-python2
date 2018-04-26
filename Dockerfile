@@ -35,6 +35,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && 
         curl \
         vim \
         nano \
+        htop \
+        tmux \
         emacs && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
