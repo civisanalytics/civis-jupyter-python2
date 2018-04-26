@@ -7,8 +7,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 ## Unreleased
 
 
+## [1.5.0] - 2018-04-26
 ### Added
 - Added htop and tmux to Linux environment (#14)
+
+### Package Updates
+- civis 1.8.1 -> 1.9.0
+- civisml-extensions 0.1.6 -> 0.1.8
+- muffnn 2.0.0 -> 2.1.0
+
+- awscli 1.11.75 (pip) -> 1.15.4 (conda)
+- botocore 1.5.38 -> 1.10.4
+- boto3 1.5.11 -> 1.7.4
+- dask 0.15.4 (pip) -> 0.17.2 (conda)
+- tensorflow 1.4.1 -> 1.7.0
+- matplotlib 2.1.0 -> 2.2.2
+- notebook 5.2.2 -> 5.4.1
+- scipy 1.0.0 -> 1.0.1
 
 ## [1.4.0] - 2018-01-25
 ### New packages
