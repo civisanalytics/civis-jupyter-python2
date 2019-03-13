@@ -44,8 +44,8 @@ dependencies:
 - statsmodels=0.8.0
 - xgboost=0.6a2
 - pip:
-  - civis==1.9.0
-  - civisml-extensions==0.1.8
+  - civis==1.9.4
+  - civisml-extensions==0.1.10
   - cloudpickle==0.5.2
   - dropbox==7.1.1
   - ftputil==3.4
