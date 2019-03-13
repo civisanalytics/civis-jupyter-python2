@@ -6,8 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
-## [1.5.1] - 2019-03-13
+## [1.6.0] - 2019-03-13
 ### Changed
+- Update Ubuntu version to 18.04 (#17)
 - Migrate CircleCI build from v1.0 to v2.0 (#15)
 
 ### Package Updates
