@@ -1,23 +1,9 @@
 FROM ubuntu:18.04
 MAINTAINER support@civisanalytics.com
 
-# Ensure UTF-8 locale.
-RUN locale-gen en_US.UTF-8
-
-# Set environment variables for UTF-8, conda, and shell environments
-ENV LANG=en_US.UTF-8 \
-    LANGUAGE=en_US:en \
-    LC_ALL=en_US.UTF-8 \
-    CONDARC=/opt/conda/.condarc \
-    BASH_ENV=/etc/profile \
-    PATH=/opt/conda/bin:$PATH \
-    CIVIS_CONDA_VERSION=4.3.30 \
-    CIVIS_PYTHON_VERSION=2.7.13 \
-    DEFAULT_KERNEL=python2 \
-    CIVIS_JUPYTER_NOTEBOOK_VERSION=0.4.2 \
-    TINI_VERSION=v0.16.1
-
 RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && \
+  apt-get install -y --no-install-recommends locales && \
+  locale-gen en_US.UTF-8 && \
   apt-get install -y --no-install-recommends software-properties-common && \
   apt-get install -y --no-install-recommends \
         make \
@@ -40,6 +26,19 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -y --no-install-recommends && 
         emacs && \
   apt-get clean -y && \
   rm -rf /var/lib/apt/lists/*
+
+# Set environment variables for UTF-8, conda, and shell environments
+ENV LANG=en_US.UTF-8 \
+    LANGUAGE=en_US:en \
+    LC_ALL=en_US.UTF-8 \
+    CONDARC=/opt/conda/.condarc \
+    BASH_ENV=/etc/profile \
+    PATH=/opt/conda/bin:$PATH \
+    CIVIS_CONDA_VERSION=4.3.30 \
+    CIVIS_PYTHON_VERSION=2.7.13 \
+    DEFAULT_KERNEL=python2 \
+    CIVIS_JUPYTER_NOTEBOOK_VERSION=0.4.2 \
+    TINI_VERSION=v0.16.1
 
 # Conda install.
 #
