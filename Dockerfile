@@ -118,7 +118,7 @@ RUN chmod +x /tini
 
 ###############################################
 # Notebook-specific configuration is below here
-RUN pip install civis-jupyter-notebook==${CIVIS_JUPYTER_NOTEBOOK_VERSION} && \
+RUN pip install git+https://github.com/civisanalytics/civis-jupyter-notebook.git@CIVP-18964-upgrade-notebook-package && \
     civis-jupyter-notebooks-install
 
 EXPOSE 8888
