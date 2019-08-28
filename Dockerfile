@@ -37,7 +37,7 @@ ENV LANG=en_US.UTF-8 \
     CIVIS_CONDA_VERSION=4.3.30 \
     CIVIS_PYTHON_VERSION=2.7.13 \
     DEFAULT_KERNEL=python2 \
-    CIVIS_JUPYTER_NOTEBOOK_VERSION=1.0.0 \
+    CIVIS_JUPYTER_NOTEBOOK_VERSION=1.0.1 \
     TINI_VERSION=v0.16.1
 
 # Conda install.
@@ -118,7 +118,7 @@ RUN chmod +x /tini
 
 ###############################################
 # Notebook-specific configuration is below here
-RUN pip install git+https://github.com/civisanalytics/civis-jupyter-notebook.git@CIVP-18964-upgrade-notebook-package && \
+RUN pip install civis-jupyter-notebook==${CIVIS_JUPYTER_NOTEBOOK_VERSION} && \
     civis-jupyter-notebooks-install
 
 EXPOSE 8888
