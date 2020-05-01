@@ -1,6 +1,11 @@
 # Civis Jupyter Notebook Docker Image for Python 2
 [![CircleCI](https://circleci.com/gh/civisanalytics/civis-jupyter-python2/tree/master.svg?style=svg)](https://circleci.com/gh/civisanalytics/civis-jupyter-python2/tree/master)
 
+# Warning
+
+This repository is no longer maintained since Python 2 notebooks are no
+longer supported in Platform.
+
 # Installation
 
 Either build the Docker image locally
